@@ -1,3 +1,6 @@
+# Adding Sass to the great starter theme from Todd Motto
+
+
 # [HTML5 Blank](http://html5blank.com)
 
 HTML5 Blank is a powerful shell for rapidly deploying your WordPress projects. Get developing in minutes, with the robust, preloaded shell. HTML5 Blank.
