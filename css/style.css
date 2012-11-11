@@ -1,0 +1,369 @@
+/* http://sass-lang.com/ */
+/* Mixins & Variables */
+/*Sizes*/
+/* Make page center */
+/* Hidden items - display none */
+/*example*/
+/*
+@mixin table-base {
+  th {
+    text-align: center;
+    font-weight: bold;
+  }
+  td, th {padding: 2px}
+}
+
+@mixin left($dist) {
+  float: left;
+  margin-left: $dist;
+}
+*/
+/* Page div */
+/* line 39, ../scss/style.scss */
+#page {
+  margin: 0px auto;
+  width: 1000px;
+}
+
+/* Colors */
+/* Lighter on the eyes than #000 Black */
+/*Font*/
+/* =============================================================================
+   HTML5 Reset
+   ========================================================================== */
+/* line 64, ../scss/style.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+/* line 67, ../scss/style.scss */
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 70, ../scss/style.scss */
+audio:not([controls]) {
+  display: none;
+}
+
+/* line 71, ../scss/style.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 73, ../scss/style.scss */
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 74, ../scss/style.scss */
+html, button, input, select, textarea {
+  font-family: sans-serif;
+  color: #222;
+}
+
+/* line 75, ../scss/style.scss */
+body {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1;
+}
+
+/* line 76, ../scss/style.scss */
+p {
+  padding: 7px 0 0 0;
+}
+
+/* line 78, ../scss/style.scss */
+h1, h2, h3, h4, h5, h6 {
+  text-decoration: none;
+  padding: 0;
+  color: #444;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+/* line 80, ../scss/style.scss */
+a {
+  color: #266e9e;
+  text-decoration: none;
+}
+
+/* line 81, ../scss/style.scss */
+a:focus {
+  outline: 0;
+}
+
+/* line 82, ../scss/style.scss */
+a:hover, a:active {
+  outline: 0;
+}
+
+/* line 84, ../scss/style.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 85, ../scss/style.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 86, ../scss/style.scss */
+.clear {
+  clear: both;
+}
+
+/* line 87, ../scss/style.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 88, ../scss/style.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #CCC;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 89, ../scss/style.scss */
+ins {
+  background: #FF9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 90, ../scss/style.scss */
+mark {
+  background: #FF0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 91, ../scss/style.scss */
+pre, code, kbd, samp {
+  font-family: "courier new", monospace, serif;
+  _font-family: "courier new", monospace, serif;
+  font-size: 1em;
+}
+
+/* line 92, ../scss/style.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 93, ../scss/style.scss */
+q {
+  quotes: none;
+}
+
+/* line 94, ../scss/style.scss */
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* line 95, ../scss/style.scss */
+small {
+  font-size: 90%;
+}
+
+/* line 96, ../scss/style.scss */
+blockquote {
+  background-color: #EEE;
+  border: 1px solid #DDD;
+  margin: 10px 0;
+  padding: 10px 30px;
+  border-radius: 3px;
+}
+
+/* line 98, ../scss/style.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 99, ../scss/style.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 100, ../scss/style.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 102, ../scss/style.scss */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 103, ../scss/style.scss */
+ol {
+  margin: 15px;
+}
+
+/* line 105, ../scss/style.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/* line 106, ../scss/style.scss */
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 108, ../scss/style.scss */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+
+/* line 110, ../scss/style.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 112, ../scss/style.scss */
+figure {
+  margin: 0;
+}
+
+/* line 114, ../scss/style.scss */
+form {
+  margin: 0;
+}
+
+/* line 115, ../scss/style.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 116, ../scss/style.scss */
+label {
+  cursor: pointer;
+}
+
+/* line 117, ../scss/style.scss */
+legend {
+  border: 0;
+  *margin-left: -7px;
+  padding: 0;
+  white-space: normal;
+}
+
+/* line 118, ../scss/style.scss */
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+/* line 119, ../scss/style.scss */
+button, input {
+  line-height: normal;
+}
+
+/* line 120, ../scss/style.scss */
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  *overflow: visible;
+}
+
+/* line 121, ../scss/style.scss */
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+/* line 122, ../scss/style.scss */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *width: 13px;
+  *height: 13px;
+}
+
+/* line 123, ../scss/style.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 124, ../scss/style.scss */
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+/* line 125, ../scss/style.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 126, ../scss/style.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+/* line 128, ../scss/style.scss */
+input:invalid, textarea:invalid {
+  background-color: #F0DDDD;
+}
+
+/* line 130, ../scss/style.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 131, ../scss/style.scss */
+td {
+  vertical-align: top;
+}
+
+/* =============================================================================
+   General Styles
+   ========================================================================== */
+/* line 140, ../scss/style.scss */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 300;
+  /* Better supported than 'lighter' attribute */
+  line-height: 18px;
+  -webkit-font-smoothing: antialiased;
+  /* Antialiased font for great smoothing */
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  /* Optimise legibility for some CSS3 kerning */
+  color: #444444;
+}
